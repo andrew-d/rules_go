@@ -120,6 +120,11 @@ constraint_value(
 )
 
 constraint_value(
+    name = "go1.9.1",
+    constraint_setting = ":go_point_version",
+)
+
+constraint_value(
     name = "go1.9.0",
     constraint_setting = ":go_point_version",
 )

@@ -1,6 +1,6 @@
 load('//go/private:go_toolchain.bzl', 'external_linker', 'go_toolchain')
 
-DEFAULT_VERSION = "1.9"
+DEFAULT_VERSION = "1.9.1"
 
 def _generate_toolchains():
   # The set of acceptable hosts for each of the go versions, this is essentially the
@@ -9,6 +9,10 @@ def _generate_toolchains():
       struct(
           name = "host",
           sdk = "@go_host_sdk",
+          hosts = ["darwin_amd64", "linux_386", "linux_amd64", "windows_386", "windows_amd64", "freebsd_386", "freebsd_amd64"],
+      ),
+      struct(
+          name = "1.9.1",
           hosts = ["darwin_amd64", "linux_386", "linux_amd64", "windows_386", "windows_amd64", "freebsd_386", "freebsd_amd64"],
       ),
       struct(

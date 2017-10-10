@@ -20,6 +20,18 @@ load("@io_bazel_rules_go//go/private:go_repository.bzl", "go_repository")
 load('@io_bazel_rules_go//go/toolchain:toolchains.bzl', "go_register_toolchains")
 
 _sdk_repositories = {
+    # 1.9.1 repositories
+    "go1.9.1.darwin-amd64.tar.gz": "59bc6deee2969dddc4490b684b15f63058177f5c7e27134c060288b7d76faab0",
+    "go1.9.1.linux-386.tar.gz": "2cea1ce9325cb40839601b566bc02b11c92b2942c21110b1b254c7e72e5581e7",
+    "go1.9.1.linux-amd64.tar.gz": "07d81c6b6b4c2dcf1b5ef7c27aaebd3691cdb40548500941f92b221147c5d9c7",
+    "go1.9.1.linux-armv6l.tar.gz": "65a0495a50c7c240a6487b1170939586332f6c8f3526abdbb9140935b3cff14c",
+    "go1.9.1.windows-386.zip": "ea9c79c9e6214c9a78a107ef5a7bff775a281bffe8c2d50afa66d2d33998078a",
+    "go1.9.1.windows-amd64.zip": "8dc72a3881388e4e560c2e45f6be59860b623ad418e7da94e80fee012221cc81",
+    "go1.9.1.freebsd-386.tar.gz": "0da7ad96606a8ceea85652eb20816077769d51de9219d85b9b224a3390070c50",
+    "go1.9.1.freebsd-amd64.tar.gz": "c4eeacbb94821c5f252897a4d49c78293eaa97b29652d789dce9e79bc6aa6163",
+    "go1.9.1.linux-arm64.tar.gz": "d31ecae36efea5197af271ccce86ccc2baf10d2e04f20d0fb75556ecf0614dad",
+    "go1.9.1.linux-ppc64le.tar.gz": "de57b6439ce9d4dd8b528599317a35fa1e09d6aa93b0a80e3945018658d963b8",
+    "go1.9.1.linux-s390x.tar.gz": "9adf03574549db82a72e0d721ef2178ec5e51d1ce4f309b271a2bca4dcf206f6",
     # 1.9 repositories
     "go1.9.darwin-amd64.tar.gz": "c2df361ec6c26fcf20d5569496182cb20728caa4d351bc430b2f0f1212cca3e0",
     "go1.9.linux-386.tar.gz": "7cccff99dacf59162cd67f5b11070d667691397fd421b0a9ad287da019debc4f",
